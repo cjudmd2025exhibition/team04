@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마음담음</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- 메뉴 컴포넌트 -->
+<div class="mdm-menu" data-mdm-menu>
+  <button
+    class="mdm-menu__button"
+    aria-label="메뉴 열기"
+    aria-haspopup="dialog"
+    aria-expanded="false">
+    <img src="img/menu_button.png" alt="메뉴 버튼" />
+  </button>
+
+  <!-- 슬라이드 인 메뉴 -->
+  <div class="mdm-menu__overlay" role="dialog" aria-modal="true" hidden>
+    <div class="mdm-menu__panel"></div>
+      <div class="mdm-menu__panel">
+
+        <button class="mdm-menu__close" aria-label="메뉴 닫기">
+          <img src="img/close-icon.png" alt="닫기" />
+        </button>
+
+        <nav class="mdm-menu__nav" aria-label="메인 메뉴">
+        <div class="wrap">
+          <div class="category">
+
+            <div class="mdm-menu__row">
+              <div class="mdm-menu__title">
+                <img src="img/menu_1.png">
+                <a href="index.html" class="big">홈<span>Home</span></a>
+              </div>
+            </div>
+
+            <div class="mdm-menu__row">
+              <div class="mdm-menu__title">
+                <img src="img/menu_2.png">
+                <a>마음담음 스토리<span>Brand Story</span></a>
+              </div>
+              <div class="mdm-menu__depth1">
+                <a href="about1.html" class="link">브랜드 소개</a>
+                <a href="about2.html" class="link">우리의 철학</a>
+              </div>
+            </div>
+
+            <div class="mdm-menu__row">
+              <div class="mdm-menu__title">
+                <img src="img/menu_3.png">
+                <a>서비스<span>Services</span></a>
+              </div>
+              <div class="mdm-menu__depth1">
+                <a href="service_test.html">지금, 내 감정의 테이프는?</a>
+                <a href="service_interaction.html">되감음</a>
+                <a href="service_app.html">나다음</a>
+              </div>
+            </div>
+
+            <div class="mdm-menu__row">
+              <div class="mdm-menu__title">
+                <img src="img/menu_4.png">
+                <a href="tracklist_list.html">트랙 아카이브<span>Track Archieves</span></a></li>
+              </div>
+            </div>
+
+            <div class="mdm-menu__row">
+              <div class="mdm-menu__title">
+                <img src="img/menu_5.png">
+                <a href="flagship.html">플래그십 스토어<span>Flagship Store</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdm-copyright">
+            <h6>© 2025 Ma-Eum Dam-Eum. All rights reserved.</h6>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- 문서 어디든(보통 body 끝) -->
+<button class="backtop" aria-label="맨 위로">
+  <img src="img/topbutton.png" alt="맨 위로">
+</button>
+
+
+<main id="main">
+  <div class="home">
+    <section class="secA">
+      <div class="falling-zone">
+        <canvas id="physicsCanvas"></canvas>
+        <img src="img/note_placeholder.png" alt="note" class="note-fixed" />
+        <div class="hero-container">
+          <div class="zigzag-container">
+            <div class="empty"></div>
+            <div class="title">
+              <div class="white-text"><p>마음을 담아, 음악이 되다.</p></div>
+              <p>마음담음은 당신이 미처 마주하지 못했던 마음 속 한마디가 무의미하게 사라지지 않도록<br>
+                음악의 힘을 통해 감각적으로 내면을 살피고 성장하는 경험을 제공합니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="context">
+          <img src="img/마음담음_로고.png">
+          <h3 class="minititle">당신의 감정은 어떤 음색인가요?</h3>
+        </div>
+      </div>
+    </section>
+    <div class="mousearea">
+      <div class="mouse"><span></span></div>
+      <div class="text">스크롤하여 감상해주세요.</div>
+    </div>
+
+    <section class="secline">
+      <div class="text-line">
+        <div class="work">
+          <div class="card-text">MA-EUM DAM-EUM</div>
+          <div class="card-text">MA-EUM DAM-EUM</div>
+          <div class="card-text">MA-EUM DAM-EUM</div>          
+        </div>
+      </div>
+    </section>
+
+    <!-- 섹션B: 종이 드래그해서 가운데 문구 드러내기 -->
+    <section class="secB" aria-labelledby="papers-title">
+      <div class="container">
+        <p class="papers-message">혹시 이런 생각, 해보신 적 있나요?</p>
+        <div class="mousearea2">
+          <div class="text">종이조각을 드래그해보세요.</div>
+          <div class="arrow bounce"></div>
+        </div>
+
+        <div class="papers-board" aria-label="종이 조각 보드">
+            <img class="paper-piece first" src="img/drag1.png" alt="좋은게">
+            <img class="paper-piece second" src="img/drag2.png" alt="내가속좁게">
+            <img class="paper-piece second" src="img/drag3.png" alt="그냥습관">
+            <img class="paper-piece first" src="img/drag4.png" alt="이런것까지">
+            <img class="paper-piece first" src="img/drag5.png" alt="원래다들">
+            <img class="paper-piece second" src="img/drag6.png" alt="말꺼내기">
+            <img class="paper-piece second" src="img/drag7.png" alt="나말고">
+            <img class="paper-piece first" src="img/drag8.png" alt="괜히말했다가">
+            <div class="papers-center">
+              <p> 많은 사람들이 일상 속에서 자신의 감정을 숨기는 것을 당연히 여기며 살아가고 있습니다.<br>
+                진정한 감정은 뒤로 외면한 채 숨겨 두었다가, 결국 뭐가 진짜 내 감정인지조차 잊어버리기도 해요.</p>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 섹션C: 스크롤 텍스트 인 -->
+    <section class="secC-dark" aria-labelledby="headline-title">
+      <div class="star"><img src="img/star.png"></div>
+      <article class="article">
+        <h2 class="title">
+          <span class="letter">당신의 마음 속<br>
+          숨어있던 선율을 찾아서</span>
+        </h2>
+        <p class="text"> 우리는 억눌린 감정의 소리에 귀 기울이고, 감정을 새롭게 마주하는 경험 속에서 자신을 발견할 수 있도록 이끕니다.</p>
+        <p class="text2">마음담음은 누구나 자신의 감정을 자유롭게 표현할 수 있도록<br>훈련을 통해 
+          실질적인 자기표현에 이르기까지의 성장을 돕고자 합니다.<br>
+        지금, 마음담음과 함께 성장으로의 첫걸음을 디뎌보세요.</p>
+      </article>
+
+    </section>
+
+    <!-- 섹션D: 브랜드 요약 + 서비스 카드 -->
+    <section class="secD" aria-labelledby="brand-title">
+      <div class="container brand-grid">
+        <div class="brand-copy">
+          <h3>작은 소리로<br>큰 울림을 만드는 곳, <br>마음담음</h3>
+        </div>
+        <div class="brand-detail">
+          <p>
+            마음담음은 감정표현이 어려운 사람들을 위해, ‘자기주장훈련법’을 기반으로 하는<br>
+            다양한 훈련 서비스를 제공합니다. 자신의 감정을 공감각적인 형태로 기록하고,<br>
+            새로운 방식으로 인지함으로써 내면화를 촉진할 수 있도록 돕는 브랜드입니다.
+          </p>
+          <a class="btn primary" href="about1.html">브랜드 소개 바로가기</a>
+        </div>
+      </div>
+      
+      <div class="menu">
+        <div class="box">
+          <a class="test" href="service_test.html">
+            <h6>나의 감정표현 유형 테스트</h6>
+            <img src="img/service1.png" alt="유형 테스트">
+          </a>
+
+          <a class="interact" href="service_interaction.html">
+            <h6>감정행동 체험 세션</h6>
+            <img src="img/service2.png" alt="체험 세션">
+          </a>
+
+          <a class="app" href="service_app.html">
+            <h6>인지 재구성 훈련 서비스</h6>
+            <img src="img/service3.png" alt="앱 서비스">
+          </a>
+        </div>
+      </div>
+
+
+  </section>
+
+
+  <!-- 섹션E: 봉투에서 티켓이 튀어나오는 인터랙션 
+  <section class="secE" aria-labelledby="flag-title">
+      <div class="container">
+          <div class="container flag-stage">
+              <div class="flag-copy">
+                  <h3 id="flag-title">초대장이 도착했습니다!</h3>
+                  <p>소중한 진심이 처음으로 펼쳐지는 공간,<br>
+                      마음담음 플래그십 스토어에서 당신의 방문을 기다리겠습니다.</p>
+                      <a class="btn move" href="flagship.html">플래그십 스토어 보러가기</a>
+              </div>
+              <div class="envelope-scene" aria-hidden="true">
+                  <img class="env-back"   src="img/env_back.png"  alt="" />
+                  <img class="ticket"     src="img/ticket.png"         alt="" />
+                  <img class="env-front"  src="img/env_front.png" alt="" />
+              </div>
+          </div>
+      </div>
+  </section>
+  -->
+  <section class="secE" id="inviteSection">
+    <div class="title">
+      <h4>초대장이 도착했습니다!</h4>
+    </div>
+    <div id="perspectiva">
+      <div id="contenedor">
+        <div class="cara frontal">
+          <div class="mousearea2">
+            <div class="text">스크롤을 내려보세요!</div>
+            <div class="arrow bounce"></div>
+          </div>
+        </div>
+        <div class="cara trasera">
+          <div id="abrir"></div>
+          <div id="partes"></div>
+          <div id="carta"><img src="img/invitation.png"></div>
+        </div>
+       </div><!-- fin contenedor -->
+    </div>
+
+    <div id="wrapper"></div>
+    <div class="detail">
+      <!--<p>소중한 진심이 처음으로 펼쳐지는 공간, 마음담음 플래그십 스토어에서 당신의 방문을 기다리겠습니다.</p>-->
+      <a class="btn primary" href="flagship.html">스토어 관련정보 더보기</a>
+    </div>
+  </section>
+  </div>
+</main>
+
+
+<footer>
+  <div class="container">
+    <!-- 1행: 좌 로고 / 중 전시 정보 / 우 작업자 -->
+    <div class="footer-row1">
+      <div class="footA">
+        <img src="img/마음담음_로고.png" alt="브랜드 로고">
+      </div>
+      <div class="footB">
+        <p>2025 청주대학교 디지털미디어디자인학과<br>제5회 졸업전시회 공( )명</p>
+      </div>
+      <div class="footC">
+        <p>Designed by<br>고현희, 황서진, 황지원</p>
+      </div>
+    </div>
+
+    <!-- 2행: 가운데 작은 텍스트 -->
+    <div class="footer-row2 footD">
+      <p>© 2025 Ma-Eum Dam-Eum. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/matter-js@0.19.0/build/matter.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="js/Matter.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마음담음</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css" />
+</head>
+<body>
+<!-- 메뉴 컴포넌트 -->
+<div class="mdm-menu" data-mdm-menu>
+  <button
+    class="mdm-menu__button"
+    aria-label="메뉴 열기"
+    aria-haspopup="dialog"
+    aria-expanded="false"
+  >
+    <img src="img/menu_button.png" alt="메뉴 버튼" />
+  </button>
+
+  <!-- 슬라이드 인 메뉴 -->
+  <div class="mdm-menu__overlay" role="dialog" aria-modal="true" hidden>
+    <div class="mdm-menu__panel"></div>
+      <div class="mdm-menu__panel">
+
+        <button class="mdm-menu__close" aria-label="메뉴 닫기">
+          <img src="img/close-icon.png" alt="닫기" />
+        </button>
+
+        <nav class="mdm-menu__nav" aria-label="메인 메뉴">
+        <div class="wrap">
+          <div class="category">
+
+            <div class="mdm-menu__row">
+              <div class="mdm-menu__title">
+                <img src="img/menu_1.png">
+                <a href="index.html" class="big">홈<span>Home</span></a>
+              </div>
+            </div>
+
+            <div class="mdm-menu__row">
+              <div class="mdm-menu__title">
+                <img src="img/menu_2.png">
+                <a>마음담음 스토리<span>Brand Story</span></a>
+              </div>
+              <div class="mdm-menu__depth1">
+                <a href="about1.html" class="link">브랜드 소개</a>
+                <a href="about2.html" class="link">우리의 철학</a>
+              </div>
+            </div>
+
+            <div class="mdm-menu__row">
+              <div class="mdm-menu__title">
+                <img src="img/menu_3.png">
+                <a>서비스<span>Services</span></a>
+              </div>
+              <div class="mdm-menu__depth1">
+                <a href="service_test.html">지금, 내 감정의 테이프는?</a>
+                <a href="service_interaction.html">되감음</a>
+                <a href="service_app.html">나다음</a>
+              </div>
+            </div>
+
+            <div class="mdm-menu__row">
+              <div class="mdm-menu__title">
+                <img src="img/menu_4.png">
+                <a href="tracklist_list.html">트랙 아카이브<span>Track Archieves</span></a></li>
+              </div>
+            </div>
+
+            <div class="mdm-menu__row">
+              <div class="mdm-menu__title">
+                <img src="img/menu_5.png">
+                <a href="flagship.html">플래그십 스토어<span>Flagship Store</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdm-copyright">
+            <h6>© 2025 Ma-Eum Dam-Eum. All rights reserved.</h6>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+<!-- 문서 어디든(보통 body 끝) -->
+<button class="backtop" aria-label="맨 위로">
+  <img src="img/topbutton.png" alt="맨 위로">
+</button>
+
+<main id="main">
+    <div class="interact">
+        <section class="secA">
+          <div class="hero">
+            <div class="interact-hero">
+              <img src="img/interact_hero1.png" alt="Main visual" />
+            </div>
+            <div class="interact-title">
+              <div class="dark-text"><p>내 표현의 첫걸음</p></div>
+              <div class="white-text"><p>되감음</p></div>
+            </div>
+            <div class="interact-pop">
+              <span class="pop-outer">
+                <span class="pop-inner"></span>
+              </span>
+            </div>
+            <div class="interact-folder">
+              <span class="pop-outer">
+                <span class="pop-inner"></span>
+              </span>
+            </div>
+
+          <div class="zigzag-container">
+            <div class="intro-ment">
+              <div class="white-text">
+                <p>당신의 마음 속 머물던 감정,</p>
+                <p>카세트 테이프에 담아보세요.</p>
+              </div>
+                <p class="column">‘되감음’는 자기주장훈련법의 행동적 주장훈련의 원리를 토대로,<br>
+                자신의 감정을 온전히 마주하고 표현할 수 있도록<br>
+                마음담음이 제안하는 새로운 감정행동 체험 세션입니다.<br>
+                감정을 직접 말하고, 눈으로 보고, 기록하는 과정을 통해<br>
+                단순한 표현을 넘어 자신을 이해하게 될 소중한 첫걸음을 지금 시작해보세요.</p>
+            </div>
+            <div class="interact-tape">
+              <img src="img/interact_tape.png">
+            </div>
+          </div>
+        </section>
+
+        <section class="secB">
+          <div class="content">
+            <div class="subtitle">
+              <div class="white-text">
+                <p>스스로 듣고 표현하는</p>
+              </div>
+              <div class="dark-text">
+                <p>인터랙티브 감정행동 체험 세션</p>
+              </div>
+
+              <div class="zigzag-container">
+                <div class="process-img">
+                  <img src="img/interact1.png">
+                </div>
+                <div class="process-text">
+                  <p class="num">01</p>
+                  <h4>선택해서 듣기</h4>
+                  <p class="column">주어진 질문에 답변하여 나에게 맞는 카세트테이프를 받고,<br>
+                   플레이어에 잘 넣은 뒤 귀 기울여 들어봐요.</p>
+                </div>
+              </div>
+              <div class="zigzag-container">
+                <div class="process-text">
+                  <p class="num">02</p>
+                  <h4>따라서 직접 말하기</h4>
+                  <p class="column">제시된 문장을 읽으며 목소리로 옮겨요. 목소리 크기는 적당한지,<br>
+                  차분하게 말했는지, 또박또박 말했는지 스스로 생각하며 말해봐요.</p>
+                </div>
+                <div class="process-img">
+                  <img src="img/interact2.png">
+                </div>
+              </div>
+              <div class="zigzag-container">
+                <div class="process-img">
+                  <img src="img/interact3.png">
+                </div>
+                <div class="process-text">
+                  <p class="num">03</p>
+                  <h4>듣고 되돌아보기</h4>
+                  <p class="column">마음담음은 감정을 이해하고 표현하기 위한 새로운 형태로 음계를<br>
+                  제안합니다. 방금 말한 내 목소리를 다시 들으며, 카세트 테이프 속 남은<br>
+                  색과 음표를 통해 기록된 내 감정의 결을 확인할 수 있어요.</p>
+                </div>
+              </div>
+              <div class="zigzag-container">
+                <div class="process-text">
+                  <p class="num">04</p>
+                  <h4>기록으로 남기기</h4>
+                  <p class="column">완성된 기록에 직접 자신만의 이름을 붙여 트랙으로 저장해요.<br>
+                  감정의 기록은 웹사이트 아카이브에서 확인할 수 있어요.</p>
+                  <a class="btn move" href="tracklist_list.html">트랙리스트 바로가기</a>
+                </div>
+                <div class="process-img">
+                  <img src="img/interact4.png">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <section class="secC-popout">
+          <div class="text-on-img1">
+            <div class="background-wrap">
+              <div class="content">
+              <div class="white-text">
+                <p>자신을 이해하기 위한 새로운 감정의 형태</p>
+              </div>
+              <p class="detail">작은 마음이 선율이 되어, 새롭게 마주하는 경험을 지금 되감음에서 가져보세요.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    </div>
+</main>
+
+
+<footer>
+  <div class="container">
+    <!-- 1행: 좌 로고 / 중 전시 정보 / 우 작업자 -->
+    <div class="footer-row1">
+      <div class="footA">
+        <img src="img/마음담음_로고.png" alt="브랜드 로고">
+      </div>
+      <div class="footB">
+        <p>2025 청주대학교 디지털미디어디자인학과<br>제5회 졸업전시회 공( )명</p>
+      </div>
+      <div class="footC">
+        <p>Designed by<br>고현희, 황서진, 황지원</p>
+      </div>
+    </div>
+
+    <!-- 2행: 가운데 작은 텍스트 -->
+    <div class="footer-row2 footD">
+      <p>© 2025 Ma-Eum Dam-Eum. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

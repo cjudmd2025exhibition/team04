@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마음담음</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri/dist/galmuri.css" />
+</head>
+<body class="about1body">
+<!-- 메뉴 컴포넌트 -->
+<div class="mdm-menu" data-mdm-menu>
+  <button
+    class="mdm-menu__button"
+    aria-label="메뉴 열기"
+    aria-haspopup="dialog"
+    aria-expanded="false"
+  >
+    <img src="img/menu_button.png" alt="메뉴 버튼" />
+  </button>
+
+  <!-- 슬라이드 인 메뉴 -->
+  <div class="mdm-menu__overlay" role="dialog" aria-modal="true" hidden>
+    <div class="mdm-menu__panel"></div>
+      <div class="mdm-menu__panel">
+
+        <button class="mdm-menu__close" aria-label="메뉴 닫기">
+          <img src="img/close-icon.png" alt="닫기" />
+        </button>
+
+        <nav class="mdm-menu__nav" aria-label="메인 메뉴">
+        <div class="wrap">
+          <div class="category">
+            <div class="mdm-menu__row">
+              <div class="mdm-menu__title">
+                <img src="img/menu_1.png">
+                <a href="index.html" class="big">홈<span>Home</span></a>
+              </div>
+            </div>
+
+            <div class="mdm-menu__row">
+              <div class="mdm-menu__title">
+                <img src="img/menu_2.png">
+                <a>마음담음 스토리<span>Brand Story</span></a>
+              </div>
+              <div class="mdm-menu__depth1">
+                <a href="about1.html" class="link">브랜드 소개</a>
+                <a href="about2.html" class="link">우리의 철학</a>
+              </div>
+            </div>
+
+            <div class="mdm-menu__row">
+              <div class="mdm-menu__title">
+                <img src="img/menu_3.png">
+                <a>서비스<span>Services</span></a>
+              </div>
+              <div class="mdm-menu__depth1">
+                <a href="service_test.html">지금, 내 감정의 테이프는?</a>
+                <a href="service_interaction.html">되감음</a>
+                <a href="service_app.html">나다음</a>
+              </div>
+            </div>
+
+            <div class="mdm-menu__row">
+              <div class="mdm-menu__title">
+                <img src="img/menu_4.png">
+                <a href="tracklist_list.html">트랙 아카이브<span>Track Archieves</span></a></li>
+              </div>
+            </div>
+
+            <div class="mdm-menu__row">
+              <div class="mdm-menu__title">
+                <img src="img/menu_5.png">
+                <a href="flagship.html">플래그십 스토어<span>Flagship Store</span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdm-copyright">
+            <h6>© 2025 Ma-Eum Dam-Eum. All rights reserved.</h6>
+          </div>
+
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+<!-- 문서 어디든(보통 body 끝) -->
+<button class="backtop" aria-label="맨 위로">
+  <img src="img/topbutton.png" alt="맨 위로">
+</button>
+
+<main id="main">
+  <div class="about1">
+    <section class="secA">
+      <!-- 타이틀 -->
+      <div class="about1-title">
+        <div class="about1-subtitle type-js">
+          <h2 class="text-js">
+            <span data-part="pre">마음담음,</span><br>
+            <span class="highlight" data-part="hl">'감정의 음'</span><span data-part="post">을 전하다.</span>
+          </h2>
+        </div>
+      </div>
+
+<!-- 티커 (플레이어 뒤로 겹침) -->
+      <div class="ticker-tape1" aria-label="site ticker">
+        <div class="ticker">
+          <div class="ticker__group">
+            <span class="ticker__item">당신의 마음 속 숨어있던 선율을 찾아서 *</span>
+            <span class="ticker__item">당신의 마음 속 숨어있던 선율을 찾아서 *</span>
+            <span class="ticker__item">당신의 마음 속 숨어있던 선율을 찾아서 *</span>
+            <span class="ticker__item">당신의 마음 속 숨어있던 선율을 찾아서 *</span>
+          </div>
+          <div class="ticker__group" aria-hidden="true">
+            <span class="ticker__item">당신의 마음 속 숨어있던 선율을 찾아서 *</span>
+            <span class="ticker__item">당신의 마음 속 숨어있던 선율을 찾아서 *</span>
+            <span class="ticker__item">당신의 마음 속 숨어있던 선율을 찾아서 *</span>
+            <span class="ticker__item">당신의 마음 속 숨어있던 선율을 찾아서 *</span>
+          </div>
+        </div>
+      </div>
+      <!-- 플레이어 -->
+      <div class="about1-player">
+        <img src="img/about1_player1.png" alt="카세트 플레이어">
+      </div>
+
+      <!-- 티커 (플레이어 위로 겹침) -->
+      <div class="ticker-tape2" aria-label="site ticker">
+        <div class="ticker">
+          <div class="ticker__group">
+            <span class="ticker__item">당신의 마음 속 숨어있던 선율을 찾아서 *</span>
+            <span class="ticker__item">당신의 마음 속 숨어있던 선율을 찾아서 *</span>
+            <span class="ticker__item">당신의 마음 속 숨어있던 선율을 찾아서 *</span>
+            <span class="ticker__item">당신의 마음 속 숨어있던 선율을 찾아서 *</span>
+          </div>
+          <div class="ticker__group" aria-hidden="true">
+            <span class="ticker__item">당신의 마음 속 숨어있던 선율을 찾아서 *</span>
+            <span class="ticker__item">당신의 마음 속 숨어있던 선율을 찾아서 *</span>
+            <span class="ticker__item">당신의 마음 속 숨어있던 선율을 찾아서 *</span>
+            <span class="ticker__item">당신의 마음 속 숨어있던 선율을 찾아서 *</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dark-text">
+        <p>삶의 근간이 되는 힘인 감정,</p>
+        <p>눈치 보기 바쁜 나머지 뒤로 하지는 않았나요?</p>
+      </div>
+
+      <div class="piece-puzzle">
+          <img src="img/puzzle_piece.png">
+      </div>
+      <div class="zigzag-container">
+        <div class="heart-puzzle">
+          <img src="img/puzzle_heart.png">
+        </div>
+        <div class="puzzle-ment">
+          <h4>억눌린 마음, 자아의 공백</h4>
+          <p class="column">감정은 생존에 필수적인 기능이기에, 제대로 다루지 못하면<br>
+          때로는 마음뿐 아니라 신체에까지 부정적인 영향을 미치기도 해요.<br>
+          따라서 우리가 자아를 지키기 위해서는<br>자신의 감정을 더 중요하게 인식하고 존중해야 합니다.</p>
+        </div>
+      </div>
+      <div class="zigzag-container">
+        <div class="second">
+          <div class="puzzle-ment">
+            <h4>나를 바꾸는 힘, 감정표현</h4>
+            <p class="column">감정을 무시하거나 억누르는 대신, 제대로 표현하는 힘을 기를 수 있다면<br>
+            우리는 삶의 행복도를 높이고 더 건강한 일상을 살아갈 수 있어요.<br>
+            마음담음은 모두가 그런 행복한 삶을 누리게 하자는 목표에서 출발했습니다.</p>
+          </div>
+          <div class="plant">
+            <img src="img/about1_plant.png">
+          </div>
+        <div>
+      </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 본문 시작 -->
+    <section class="secA-follow">
+      <div class="ment">
+        <div class="zigzag-container">
+          <div class="zigzag-1">
+            <img src="img/마음담음_로고.png">
+          </div>
+          <div class="zigzag-2">
+            <div class="phrase">
+              <h3>당신의 감정은<br> <span class="color">어떤 음색</span>인가요?</h3>
+            </div>
+            <p class="text">마음담음은 당신이 미처 마주하지 못했던 마음 속 한마디가<br>무의미하게 사라지지 않도록,
+            음악의 힘을 통해<br>감각적으로 내면을 살피고 성장하는 경험을 제공하는 브랜드입니다.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="secB">
+      <div class="zigzag-container">
+        <div class="record-ment">
+          <div class="white-text">
+            <p>감정표현만큼 중요한 것은</p>
+            <p>표현에 대한 긍정적인 경험입니다.</p>
+          </div>
+          <p class="column">우리는 긍정적인 감정표현 경험의 첫걸음으로써<br>
+          감정을 단순히 기록하는 것에서 멈추지 않고,<br> 그 순간의 마음이 오래도록 남게 하고자<br>
+          <span>‘음악’</span>이라는 새로운 감정의 형태를 선택했어요.</p>
+          <p class="column2">음악을 통해 표현된 감정은 감각적으로 구조화되기 때문에<br>
+          표현의 반응에 대한 부담을 줄여줍니다.</p>
+        </div>
+        <div class="record-gif"><img src="img/about1_record.png"></div>
+      </div>     
+    </section>
+
+    <section class="secC">
+      <div class="sound-ment">   
+        <div class="mdm-flip">
+          <span class="mdm-flip__static">마음을 담아,</span>
+          <span class="mdm-flip__box">
+            <span class="mdm-flip__list">
+              <span class="mdm-flip__item">가치를</span>
+              <span class="mdm-flip__item">선율을</span>
+              <span class="mdm-flip__item">자아를</span>
+              <span class="mdm-flip__item">순간을</span>
+              <span class="mdm-flip__item">울림을</span>
+            </span>
+          </span>
+          <span class="mdm-flip__static">담아.</span>
+        </div>
+      </div>
+
+      <div class="detail">
+        <p class="column3">마음담음의 훈련은 직접 감정을 기록하고, 기록된 감정의 흐름을 
+          공감각적으로 회고할 수 있는 구조로 설계되었습니다.</p>
+        <div class="text-on-img1">
+          <div class="background-wrap">
+            <div class="content">
+             <p class="column4">
+                음악을 통해 표현된 감정은 감각적으로 구조화되어<br>
+                내 마음을 한발짝 물러나 있는 그대로 마주할 수 있게 합니다.<br>
+                자신의 감정을 음악으로 기록하고 살펴보면서, 깊이있게 인지하여<br>
+                주체적인 자기 성찰과 성장을 이끌어내는 훈련 경험을 제공합니다.</p>
+
+              <p class="column4">무엇보다도 섬세하고 중요한 기능인 감정을 위해,<br>
+                마음담음은 다양한 심리학 이론을 기반으로 하는<br>체계적인 훈련 서비스를 제공합니다.<br>
+                마음담음의 브랜드 철학을 지금 바로 만나보세요.</p>
+              <a class="btn move" href="about2.html">훈련에 대한 자세한 내용 바로가기</a>
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+    </section>
+
+</main>
+
+
+
+<footer>
+  <div class="container">
+    <!-- 1행: 좌 로고 / 중 전시 정보 / 우 작업자 -->
+    <div class="footer-row1">
+      <div class="footA">
+        <img src="img/마음담음_로고.png" alt="브랜드 로고">
+      </div>
+      <div class="footB">
+        <p>2025 청주대학교 디지털미디어디자인학과<br>제5회 졸업전시회 공( )명</p>
+      </div>
+      <div class="footC">
+        <p>Designed by<br>고현희, 황서진, 황지원</p>
+      </div>
+    </div>
+
+    <!-- 2행: 가운데 작은 텍스트 -->
+    <div class="footer-row2 footD">
+      <p>© 2025 Ma-Eum Dam-Eum. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
